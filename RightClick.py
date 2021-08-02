@@ -20,8 +20,8 @@ menu_list=driver.find_elements(By.CSS_SELECTOR,'li.context-menu-icon span')
 
 for i in menu_list:
     print(i.text)
-#act_chain.send_keys_to_element(element, value).perform()
+#act_chain.send_keys_to_element(element, value) #no .perform in send-keys
 #act_chain.click().perform()
-act_chain.double_click()
+#act_chain.double_click().perform()
 time.sleep(3)
 driver.quit()
