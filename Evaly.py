@@ -70,7 +70,7 @@ for k in miList:
 
 #showing the info of maximum priced product
 print('Name of max Product: ',driver.find_element(By.CSS_SELECTOR,'h2.text-gray-700').text)
-print('Price of max Product: ',driver.find_element(By.XPATH,"//body/div[@id='__next']/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/h2[1]").text)
+print('Price of max Product: ',driver.find_element(By.XPATH,"/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/h2[1]").text)
 #PRODUCT WORK DONE
 
 driver.find_element(By.XPATH,"//button[contains(text(),'I understand')]").click() #have to click this 1st before career
