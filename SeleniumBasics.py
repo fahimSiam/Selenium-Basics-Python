@@ -15,6 +15,7 @@ driver.back()
 time.sleep(2)
 print(driver.title)
 driver.forward()
+driver.refresh()
 time.sleep(2)
 print(driver.title)
 #driver.find_element_by_xpath("//*[@id='Tabbed']/a/button").click() #clicking a button using xpath
