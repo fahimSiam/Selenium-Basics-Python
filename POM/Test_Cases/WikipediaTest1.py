@@ -3,8 +3,9 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from WebPages.EnglishPage import EnglishPage
-from WebPages.MainPage import MainPage
+from Pages.EnglishPage import EnglishPage
+from Pages.MainPage import MainPage
+
 #import WebPages
 driver=webdriver.Chrome(ChromeDriverManager().install())
 base_URL='http://www.wikipedia.org'
