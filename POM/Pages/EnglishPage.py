@@ -18,7 +18,7 @@ class EnglishPage:
 
     
     def search_text(self):
-        input_box_element=self.wait_variable.until(EC.presence_of_element_located(By.ID,self.search_id_locator))
+        input_box_element=self.wait_variable.until(EC.presence_of_element_located((By.ID,self.search_id_locator)))
         input_box_element.send_keys(self.term)
         input_box_element.submit()
         self.wait_variable.until(EC.title_contains(self.term))

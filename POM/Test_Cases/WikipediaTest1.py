@@ -6,9 +6,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from Pages.EnglishPage import EnglishPage
 from Pages.MainPage import MainPage
 
-#import WebPages
+
 driver=webdriver.Chrome(ChromeDriverManager().install())
 base_URL='http://www.wikipedia.org'
+
 
 def set_up():
     driver.get(base_URL)
