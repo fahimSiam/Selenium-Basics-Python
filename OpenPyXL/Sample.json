@@ -1,0 +1,65 @@
+[
+  {
+    "Postcode": 1234,
+    "Sales_Rep_ID": 456,
+    "Sales_Rep_Name": "Jane",
+    "Year": 2011,
+    "Value": 84219
+  },
+  {
+    "Postcode": 3456,
+    "Sales_Rep_ID": 789,
+    "Sales_Rep_Name": "Ashish",
+    "Year": 2012,
+    "Value": 28322
+  },
+  {
+    "Postcode": "7676",
+    "Sales_Rep_ID": 456,
+    "Sales_Rep_Name": "Jane",
+    "Year": 2013,
+    "Value": 81879
+  },
+  {
+    "Postcode": 2073,
+    "Sales_Rep_ID": 123,
+    "Sales_Rep_Name": "John",
+    "Year": 2011,
+    "Value": 44491
+  },
+  {
+    "Postcode": 2134,
+    "Sales_Rep_ID": 789,
+    "Sales_Rep_Name": "Ashish",
+    "Year": 2012,
+    "Value": 71838
+  },
+  {
+    "Postcode": 2162,
+    "Sales_Rep_ID": 123,
+    "Sales_Rep_Name": "John",
+    "Year": 2013,
+    "Value": 64532
+  },
+  {
+    "Postcode": 2093,
+    "Sales_Rep_ID": 456,
+    "Sales_Rep_Name": "Jane",
+    "Year": 2011,
+    "Value": 58963
+  },
+  {
+    "Postcode": 2042,
+    "Sales_Rep_ID": 789,
+    "Sales_Rep_Name": "Ash",
+    "Year": 2012,
+    "Value": 27522
+  },
+  {
+    "Postcode": 2198,
+    "Sales_Rep_ID": 123,
+    "Sales_Rep_Name": "John",
+    "Year": 2013,
+    "Value": 77985
+  }
+]
