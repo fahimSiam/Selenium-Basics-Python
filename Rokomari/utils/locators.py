@@ -7,6 +7,7 @@ class SignInPageLocator(object):
     email = (By.XPATH, "//input[@id='j_username']")
     password = (By.XPATH, "//input[@id='j_password']")
     signIn = (By.XPATH, "//button[contains(text(),'Sign In')]")
-    invalidAlert = (By.XPATH, "//div[contains(text(),'Incorrect username or password.')]")
+    invalidAlert = (By.XPATH, "//p[contains(text(),'Wrong email/phone or password')]")
+    invalidUser=(By.XPATH,"//body/div[3]/div[1]/p[2]")
 
 

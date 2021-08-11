@@ -6,10 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage(object):
 
-    def __init__(self, driver, base_url="about:blank"):
+    def __init__(self, driver,testCase, base_url="about:blank"):
         self.base_url = base_url
         self.driver = driver
         self.timeout = 90
+        self.testCase=testCase
 
     # Interacting with the page_________________________
 
