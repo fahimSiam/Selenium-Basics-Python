@@ -1,3 +1,4 @@
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 import allure
 import pytest
@@ -7,8 +8,12 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver import ActionChains
 import re
+
+@allure.severity(allure.severity_level.NORMAL)
 class TestHRM:
-    def test_listemployees(self):
+
+    @allure.severity(allure.severity_level.MINOR)
+    def test_title(self):
         self.driver=webdriver.Chrome(ChromeDriverManager().install())
 
         self.driver.implicitly_wait(10)
@@ -25,8 +30,11 @@ class TestHRM:
         self.driver.close()
 
 
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_listemployees(self):
+        pytest.skip('Skipping this test')
     
-
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_Login(self):
         self.driver=webdriver.Chrome(ChromeDriverManager().install())
 
@@ -35,14 +43,20 @@ class TestHRM:
         self.driver.get("https://opensource-demo.orangehrmlive.com/")
 
 
-        self.driver.find_element(By.ID,'txtUsername').send_keys('siam')
-        self.driver.find_element(By.ID,'txtPassword').send_keys('password')
+        self.driver.find_element(By.ID,'txtUsername').send_keys('Admin')
+        self.driver.find_element(By.ID,'txtPassword').send_keys('admin123')
         self.driver.find_element(By.ID,'btnLogin').click()
         act_title=self.driver.title
 
-        if(act_title=="OrangHRM"):
+        if(act_title=="OrangeHRMe"):
             self.driver.close()
             assert True
         else:
+            allure.attach(self.driver.get_screenshot_as_png(),
+            name="testLoginScreen",
+            attachment_type=AttachmentType.PNG)
             self.driver.close()
             assert False
+#allure server D:\files\codes\vs\selenium\allure\reports
+# https://app.netlify.com/
+# pytest -v -s --alluredir="D:\files\codes\vs\selenium\allure\reports" test_allure.py
