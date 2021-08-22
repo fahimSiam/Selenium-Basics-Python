@@ -59,4 +59,4 @@ class TestHRM:
             assert False
 #allure server D:\files\codes\vs\selenium\allure\reports
 # https://app.netlify.com/
-# pytest -v -s --alluredir="D:\files\codes\vs\selenium\allure\reports" test_allure.py
+# pytest -v -s --alluredir="S:\codes\vs\selenium\allure\reports" test_allure.py
